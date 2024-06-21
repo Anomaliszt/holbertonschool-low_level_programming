@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* _abs
+* _abs - Absolute value
 * @x: value
 * Return: Absolute alue of integer
 */
