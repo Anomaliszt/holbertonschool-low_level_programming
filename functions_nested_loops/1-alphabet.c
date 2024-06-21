@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* main - Alphabet game 2.0
+* print_alphabet - Alphabet game 2.0
 *
 * Return: Always 0
 */
