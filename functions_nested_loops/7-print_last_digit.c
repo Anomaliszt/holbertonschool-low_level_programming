@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* print_last_digit
+* print_last_digit - Prints last digit
 * @x: number
-* Return: Always 0
+* Return: abs or y
 */
 
 int print_last_digit(int x)
@@ -15,11 +15,11 @@ int print_last_digit(int x)
 	{
 		abs = y * -1;
 		_putchar(abs + 48);
-		return(abs);
+		return (abs);
 	}
 	else
 	{
 		_putchar(y + 48);
-		return(y);
+		return (y);
 	}
 }
