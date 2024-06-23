@@ -26,7 +26,7 @@ void jack_bauer(void)
 				_putchar('\n');
 				}
 
-	for (hour = 1; hour <= 2; hour++)
+	for (hour = 2; hour <= 2; hour++)
 		for (min = 0; min <= 3; min++)
 			for (hourb = 0; hourb <= 5; hourb++)
 				for (minb = 0; minb <= 9; minb++)
