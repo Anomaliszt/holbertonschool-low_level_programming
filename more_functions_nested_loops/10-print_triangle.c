@@ -2,7 +2,7 @@
 
 /**
 * print_triangle - Prints triangle
-* @size:
+* @size: random value
 * Return: nothing
 */
 
@@ -18,9 +18,9 @@ void print_triangle(int size)
 	{
 		for (x = 0; x < size; x++)
 		{
-			for (y = 0; y < size -x -1; y++)
+			for (y = 0; y < size - x - 1; y++)
 				_putchar(' ');
-			for (k = size -x -1; k < size; k++)
+			for (k = size - x - 1; k < size; k++)
 				_putchar('#');
 			_putchar('\n');
 		}
