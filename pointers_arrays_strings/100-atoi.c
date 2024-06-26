@@ -13,13 +13,19 @@ int _atoi(char *s)
 	int y = 0;
 	int k = 1;
 	int o;
+	int end = 0;
 
 	for (x = 0; s[x] != '\0'; x++)
 	{
 		if (s[x] == '-')
 			k = -k;
 		else if (s[x] >= '0' && s[x] <= '9')
+		{
 			y = (y * 10) + (s[x] - '0');
+			end = 1;
+		}
+		else if (end == 1)
+			break;
 	}
 	o = k * y;
 	return (o);
