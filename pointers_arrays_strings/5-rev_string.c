@@ -1,23 +1,29 @@
 #include "main.h"
 
 /**
-*
-*
-*
+* rev_string - rev the string
+* @s: random string
+* Return: nothing
 */
 
 void rev_string(char *s)
 {
-	int length = 0;
+	int x = 0;
+	int y;
+	int temp;
 
-	while (s[length] != '\0')
-	length++;
+	while (s[x])
+		x++;
 
-	while (x-- != '\0')
+	x--;
+
+	for (y = 0; y < x; y++, x--)
 	{
-		;
+		temp = s[y];
+		s[y] = s[x];
+		s[x] = temp;
 	}
-	_putchar('\n');
 }
+
 
 
