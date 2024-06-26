@@ -10,9 +10,8 @@
 int _atoi(char *s)
 {
 	int x;
-	int y = 0;
+	unsigned int y = 0;
 	int k = 1;
-	int o;
 	int end = 0;
 
 	for (x = 0; s[x] != '\0'; x++)
@@ -27,6 +26,5 @@ int _atoi(char *s)
 		else if (end == 1)
 			break;
 	}
-	o = k * y;
-	return (o);
+	return (y * k);
 }
