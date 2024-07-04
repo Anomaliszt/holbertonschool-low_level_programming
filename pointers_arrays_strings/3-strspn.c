@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-*
-*
-*
-*
+* _strspn - function to get length
+* @s: string
+* @accept: string
+* Return: k
 */
 
 unsigned int _strspn(char *s, char *accept)
