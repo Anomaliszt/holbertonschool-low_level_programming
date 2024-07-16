@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
+* get_op_func - get character
+* @s: string of char
 *
-*
-*
-*
+* Return: NUll or ops
 */
 
 int (*get_op_func(char *s))(int, int)
