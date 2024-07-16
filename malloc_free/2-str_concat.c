@@ -3,37 +3,52 @@
 #include <stdlib.h>
 
 /**
-* *str_concat - fusion of 2 arrays
-* @s1: first string
-* @s2: second string
-* Return: pointer of 2 arrays
-*/
+ * str_concat - Concatenates two strings of any size
+ * @s1: the first string to concatenate
+ * @s2: the second string to concatenate
+ *
+ * Return: concat
+ */
 
 char *str_concat(char *s1, char *s2)
 {
-	int len = 0;
-	int len2 = 0;
-	char *ptr;
-	int i = 0;
-	int x = 0;
+	int i = 0, j = 0, k = 0, l = 0;
+	char *s;
 
-	while (s1[len])
-		len++;
+	if (s1 == NULL)
+		s1 = "";
 
-	while (s2[len2])
-		len2++;
-	len2++;
+	if (s2 == NULL)
+		s2 = "";
 
-	ptr = malloc(sizeof(char) * (len + len2));
+	while (s1[i])
+		i++;
 
-	for (i = 0; i < len; i++)
-		ptr[i] = s1[i];
+	while (s2[j])
+		j++;
 
-	for (x = 0; x < len2; x++, i++)
-		ptr[i] = s2[x];
+	l = i + j;
+	s = malloc((sizeof(char) * l) + 1);
 
-	if (!ptr)
+	if (s == NULL)
 		return (NULL);
 
-	return (ptr);
+	j = 0;
+
+	while (k < l)
+	{
+		if (k <= i)
+			s[k] = s1[k];
+
+		if (k >= i)
+		{
+			s[k] = s2[j];
+			j++;
+		}
+
+		k++;
+	}
+
+	s[k] = '\0';
+	return (s);
 }
