@@ -1,4 +1,3 @@
-1-main.c
 #include "variadic_functions.h"
 
 /**
