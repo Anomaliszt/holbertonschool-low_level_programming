@@ -3,7 +3,6 @@
 /**
 * print_list - function that prints elements of a list
 * @h: lists
-*
 * Return: number of nodes
 */
 
